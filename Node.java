@@ -28,14 +28,31 @@ public class Node{
     return data;
    }
 
+   /**
+ * Retrieves the left child of the current node.
+ *
+ * @return The left child node, or null if no left child exists.
+ */
    public Node getLeft(){
     return left;
    }
 
+   /**
+ * Retrieves the right child of the current node.
+ *
+ * @return The right child node, or null if no right child exists.
+ */
    public Node getRight(){
     return right;
    }
 
+   /**
+ * Inserts a value into the tree doing the following:
+ * - If the value is less than the current node's data, it is inserted into the left subtree.
+ * - If the value is greater than or equal to the current node's data, it is inserted into the right subtree.
+ *
+ * @param val The value to be inserted into the tree.
+ */
    public void insert(int val){
     if (val < this.data){
         if (this.left == null){
