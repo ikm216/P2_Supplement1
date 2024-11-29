@@ -6,6 +6,7 @@
 public class Node{
    private int nodeId, data;
    private Node left, right;
+   private static int id_count = 1;
 
    /**
      * Constructs a new Node with the given ID and data.
@@ -27,7 +28,7 @@ public class Node{
     return data;
    }
 
-
+  
 
 
 }
