@@ -2,8 +2,8 @@ import org.junit.*;
 
 public class Test_test {
     @Test
-    public void t(){
-        test x = new test();
-        Assert.assertEquals("Test Test", x.says());
+    public void testInsertValueIntoNode(){
+        Node node = new Node(1, 10);
+        Assert.assertEquals(10, node.getNode());
     }
 }
