@@ -28,7 +28,32 @@ public class Node{
     return data;
    }
 
-  
+   public Node getLeft(){
+    return left;
+   }
+
+   public Node getRight(){
+    return right;
+   }
+
+   public void insert(int val){
+    if (val < this.data){
+        if (this.left == null){
+            this.left = new Node(++id_count, val);
+        }
+        else{
+            this.left.insert(val);
+        }
+    }
+    else{
+        if (this.right == null){
+            this.right = new Node(++id_count, val);
+        }
+        else{
+            this.right.insert(val);
+        }
+    }
+   }
 
 
 }
