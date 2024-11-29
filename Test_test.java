@@ -24,7 +24,7 @@ public class Test_test {
         node.insert(10);
         node.insert(20);
 
-        String test_outcome = "Node ID: 1, Data: 10\n" + "\tNode ID: 2, Data: 10\n" + "\t\tNode ID: 3, Data: 20\n";
+        String test_outcome = "Node id: 1, Data: 10\n" + "\tNode id: 2, Data: 10\n" + "\t\tNode id: 3, Data: 20\n";
 
         Assert.assertEquals(test_outcome, node.dump());
     }

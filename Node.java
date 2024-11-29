@@ -72,5 +72,20 @@ public class Node{
     }
    }
 
+   public String dump(){
+    StringBuilder string = new StringBuilder();
+    dump(this, string, 0);
+    return string.toString();
+   }
+
+   private void dump(Node node, StringBuilder string, int level){
+    if (node != null){
+        string.append("\t".repeat(level))
+        .append("Node id: ").append(node.nodeId)
+        .append(", Data: ").append(node.data).append("\n");
+        dump(node.left, string, level + 1);
+        dump(node.right, string, level + 1);
+    }
+   }
 
 }
