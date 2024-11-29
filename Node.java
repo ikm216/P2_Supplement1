@@ -72,12 +72,28 @@ public class Node{
     }
    }
 
+   /**
+ * Dumps the structure of the binary tree into a formatted string representation.
+ * The structure includes each node's ID, data, and its level in the tree.
+ * Each level is indented with tabs for better visualization of the tree hierarchy.
+ *
+ * @return A string representation of the binary tree.
+ */
    public String dump(){
     StringBuilder string = new StringBuilder();
     dump(this, string, 0);
     return string.toString();
    }
 
+   /**
+ * A helper method for recursively dumping the structure of the tree.
+ * This method traverses the tree in a pre-order manner and appends node details
+ * to the provided StringBuilder.
+ *
+ * @param node   The current node being processed.
+ * @param string The StringBuilder object used to accumulate the tree structure.
+ * @param level  The current depth of the node in the tree, used for indentation.
+ */
    private void dump(Node node, StringBuilder string, int level){
     if (node != null){
         string.append("\t".repeat(level))
