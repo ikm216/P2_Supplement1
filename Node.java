@@ -10,4 +10,6 @@ public class Node{
    public int getNode(){
     return data;
    }
+
+   
 }
