@@ -12,10 +12,11 @@ public class Test_test {
         node.insert(5);
         Assert.assertEquals(5, node.getLeft().getNode());
     }
+    @Test
     public void testInsertValueIntoRight(){
         Node node = new Node(1, 10);
         node.insert(15);
-        Assert.assertEquals(5, node.getLeft().getNode());
+        Assert.assertEquals(15, node.getRight().getNode());
     }
     }
 
